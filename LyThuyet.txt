@@ -52,3 +52,6 @@ Tạo Repository sau đó lấy link rồi gõ lệnh trên git bash
 - git remote add origin <link>
 - git remote -v
 - chạy push bằng: git push -u origin master
+
+Làm sao để  đổi tk github đang dùng sang tk khác trong git bash, giúp em với..
+em có thể dùng ssh key để connect đến git, 1 máy có thể có nhiều key
