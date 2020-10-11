@@ -1,0 +1,41 @@
+Khái niệm
+Repository: là nơi share code làm việc chung
+Working directory: là local mình làm và khi nào muốn cho nên Repository
+phải thông quang Index
+
+Các lệnh cơ bản:
+- git init : khởi tạo project
+- git add : thêm file mà mình muốn chuẩn bị commit lên
+- git commit -m 'Tin nhắn là mình muốn để'
+- git status : trạng thái
+
+Xem thông tin
+= git log : xem lịch sử và id
+- git show : để xem thông tin thông tin
+- git diff : để xem những file Modify (bị sửa đổi nhưng chưa commit lên bên Working directory)
+
+Các thuật ngữ
+- Working directory: file đang làm việc và bị thay đổi
+- Staging Area:Sau khi add thì các file được đưa lên đây (file xanh là đang ở), chuẩn bị để commit
+- git repository : Lưu tập hợp các commit
+
+Checkout và Reset : được sử dụng nhiều cách
+- git checkout : xóa bỏ thay đổi 1 số file(Modify) ở WorkingDirectory
+- git reset : bỏ khỏỉ StagingArea sau khi add lên
+
+Branching & Merging: Tạo nhánh và ghép nhánh
+Khi init Repository thì đã tạo ra nhánh master
+- git branch : xem nhánh
+- gitk : xem giao diện GUI
+
+- git checkout -b <branch> : thêm branch mới và sử dụng luôn
+- git checkout <branch> : chuyển đến branch muốn dùng
+- git merge : muốn xác nhập branch khác vào 1 branch nào đấy A <--- B
+git checkout A : vào A
+git merge B : dùng B xác nhập A
+- git branch -D <branch> : xóa branch
+
+Git reset : Để undo cái commit k vừa ý
+- git reset --soft <id lấy ở log> : trở lại commit mình yêu cầu và ở Starging Area
+- git reset --mixed <id lấy ở log> : trở lại commit mình yêu cầu và ở Working Directory
+- git reset --hard <id lấy ở log> : xóa những tk commit sau tk mình chọn
