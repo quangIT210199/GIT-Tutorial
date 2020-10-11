@@ -36,6 +36,18 @@ git merge B : dùng B xác nhập A
 - git branch -D <branch> : xóa branch
 
 Git reset : Để undo cái commit k vừa ý
-- git reset --soft <id lấy ở log> : trở lại commit mình yêu cầu và ở Starging Area
-- git reset --mixed <id lấy ở log> : trở lại commit mình yêu cầu và ở Working Directory
-- git reset --hard <id lấy ở log> : xóa những tk commit sau tk mình chọn
+- git reset --soft <to_commit(lấy id của nó)> : trở lại commit mình yêu cầu , cho những tk sau nó vào Starging Area
+- git reset --mixed <to_commit(lấy id của nó)> : trở lại commit mình yêu cầu, cho những tk sau nó vào Working Directory
+- git reset --hard <to_commit(lấy id của nó)> : xóa những tk commit sau tk mình chọn
+
+Git revert: Thấy commit nào đấy vài commit, muốn bỏ nó đi. Nó sẽ sửa hết các commit có liên quan
+- git revert <commit>
+
+File .git ignore sẽ nằm trong project. mục đích bỏ qua 1 số file mà k muốn commit và hiện ra khi gõ status
+- tạo file .gitignore rồi ghi tên các file mình muốn vào.
+ ví dụ như bên NodeJS có file Package.json để lưu các thư viện thêm vào thì chỉ cần gửi file package chứ k cần phải
+gửi toàn bộ file. vì ngta chạy file package.json là tải các thư viện kia
+
+Tạo Repository sau đó lấy link rồi gõ lệnh trên git bash
+- git remote add origin <link>
+- git remote -v
