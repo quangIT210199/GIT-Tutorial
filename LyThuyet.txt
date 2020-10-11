@@ -51,3 +51,4 @@ gửi toàn bộ file. vì ngta chạy file package.json là tải các thư vi�
 Tạo Repository sau đó lấy link rồi gõ lệnh trên git bash
 - git remote add origin <link>
 - git remote -v
+- chạy push bằng: git push -u origin master
