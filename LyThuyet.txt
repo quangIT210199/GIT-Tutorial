@@ -3,6 +3,14 @@ Repository: là nơi share code làm việc chung
 Working directory: là local mình làm và khi nào muốn cho nên Repository
 phải thông quang Index
 
+Quy trình làm việc nhóm
+Pull request:
+1. git checkout -b <feature_branch>
+2.git push origin <branch>
+3.create a pull request on Github
+4.review code
+5.merge to master
+
 Các lệnh cơ bản:
 - git init : khởi tạo project
 - git add : thêm file mà mình muốn chuẩn bị commit lên
@@ -55,3 +63,7 @@ Tạo Repository sau đó lấy link rồi gõ lệnh trên git bash
 
 Làm sao để  đổi tk github đang dùng sang tk khác trong git bash, giúp em với..
 em có thể dùng ssh key để connect đến git, 1 máy có thể có nhiều key
+
+Git clone & pull
+- git clone <link repository>: copy cái repository trên github về, để làm việc chung repository
+- git pull <link repository>: Để cập nhật mới nhất từ repository về
