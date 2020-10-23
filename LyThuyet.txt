@@ -11,6 +11,12 @@ Pull request:
 4.review code
 	4.1.review code online ( trên github) 
 	4.2.fetch branch into local to test offline (optinal)
+	- git fetch origin <tên branch mình muốn mang về local ktra>
+Nhìn chung, git pull thực hiện git fetch theo sau là git merge
+
+
+Khi bạn sử dụng pull, Git sẽ cố gắng tự động thực hiện công việc của bạn cho bạn. Vì vậy Git sẽ merger bất kỳ commit ở trong nhánh bạn đang làm việc. Tự động merger các commit mà không cho phép bạn xem chúng trước. Nếu bạn không quản lý chặt chẽ các branch của mình, bạn có thể gặp phải conflicts thường xuyên.
+Khi bạn fetch, Git tập hợp bất kỳ commit nào từ target branch không tồn tại trong nhánh hiện tại của bạn và lưu trữ chúng trong local repository của bạn. Tuy nhiên, nó không merger chúng với nhánh hiện tại của bạn. Điều này đặc biệt hữu ích nếu bạn cần cập nhật kho lưu trữ của bạn, nhưng đang làm việc trên project rất dễ có thể bị ảnh hưởng nếu bạn cập nhật các file của mình. Để merger các commit vào nhánh chính của bạn, bạn sử dụng merger.
 	4.3.approve the pull request ( chấp nhận pull request)
 5.merge to master
 
