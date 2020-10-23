@@ -9,6 +9,9 @@ Pull request:
 2.git push origin <branch> : push branch lên để ngta ktra code
 3.create a pull request on Github : tạo pull request
 4.review code
+	4.1.review code online ( trên github) 
+	4.2.fetch branch into local to test offline (optinal)
+	4.3.approve the pull request ( chấp nhận pull request)
 5.merge to master
 
 Các lệnh cơ bản:
